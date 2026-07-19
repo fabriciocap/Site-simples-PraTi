@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/iconsite.png" type="image/x-icon">
+    <title>Fabrício Capeletti - Synapse AI </title>
+</head>
+<body>
+
+    <!--HEADER-->
+    <header class="cabecalho">
+
+        <div class="container">
+
+                <div class="logo-titulo">
+                    <img src="img/iconsite.png" alt="Logo do Site">
+                    <h1>Fabrício Capeletti - Synapse AI</h1>
+                </div>
+
+                <nav class="navegacao">
+                    <a href="#sobre">sobre</a>
+                    <a href="#contato" class="caixa">contato</a>
+                </nav>
+        </div>
+    </header>
+
+    <!--Corpo-->
+    <main class="principal">
+
+        <div class="hero">
+
+            <section class="slogan">
+                <div class="bloco">
+                    <div class="texto">
+                        <p class="extra">Desenvolvimento Web · Inteligência Artificial</p>
+                        <h2>Dedicação em cada detalhe, <span class="highlight">resultado em cada projeto.</span></h2>
+                        <p>Se você busca <span>automatizar atendimentos,</span> responder clientes com mais rapidez e aumentar a eficiência do seu negócio, este projeto oferece uma IA integrada ao WhatsApp para responder mensagens automaticamente, tirar dúvidas e melhorar a comunicação com seus clientes.
+                        </p>
+                        <button id="botao-cta">Vamos conversar</button>
+                    </div>
+                </div>
+            </section>
+
+            <div class="lateral">
+                <aside class="perfil-aside">
+                    <img class="foto" src="img/minhafoto.jpeg" alt="Foto de Fabrício Capeletti">
+                </aside>
+            </div>
+
+        </div>
+
+        <!--Sobre-->
+
+        <section class="sobre" id="sobre">
+
+            <div class="container-sobre">
+
+                <div class="sobre-texto">
+                    <h3>Sobre</h3>
+                    <p>Sou estudante do ensino médio, aluno da +PraTi e apaixonado por programação, inteligência artificial e tecnologia. Como criador da Synapse AI, busco desenvolver soluções inteligentes que automatizem processos e transformem ideias em resultados reais. Acredito que aprendizado contínuo, dedicação e inovação são essenciais para criar projetos que fazem a diferença.</p>
+                </div>
+
+                <div class="sobre-tags">
+                    <span class="tag">Machine Learning</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">Chatbot</span>
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!--Formulario-->
+
+        <section class="contato" id="contato">
+
+            <div class="container-contato">
+
+                <div class="contato-titulo">
+                    <h3>Contato</h3>
+                    <p>Preencha o formulário abaixo e retornaremos o mais breve possível.</p>
+                </div>
+
+                <form class="formulario" id="formulario-contato" novalidate>
+
+                    <div class="campo">
+                        <label for="nome" class="rotulo">Nome</label>
+                        <input type="text" id="nome" name="nome" class="entrada" placeholder="Seu nome completo" required>
+                        <span class="erro-campo" id="erro-nome"></span>
+                    </div>
+
+                    <div class="campo">
+                        <label for="email" class="rotulo">E-mail</label>
+                        <input type="email" id="email" name="email" class="entrada" placeholder="seuemail@exemplo.com" required>
+                        <span class="erro-campo" id="erro-email"></span>
+                    </div>
+
+                    <div class="linha-dupla">
+                        <div class="campo">
+                            <label for="cep" class="rotulo">CEP</label>
+                            <input type="text" id="cep" name="cep" class="entrada" placeholder="00000-000" maxlength="9" inputmode="numeric">
+                            <span class="erro-campo" id="erro-cep"></span>
+                        </div>
+
+                        <div class="campo">
+                            <label for="endereco" class="rotulo">Endereço</label>
+                            <input type="text" id="endereco" name="endereco" class="entrada" placeholder="Preenchido automaticamente pelo CEP" readonly>
+                        </div>
+                    </div>
+
+                    <div class="campo">
+                        <label for="mensagem" class="rotulo">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" class="entrada area-mensagem" rows="5" placeholder="Conte um pouco sobre o que você precisa" required></textarea>
+                        <span class="erro-campo" id="erro-mensagem"></span>
+                    </div>
+
+                    <button type="submit" class="botao-enviar">Enviar mensagem</button>
+
+                </form>
+
+                <div class="mensagem-sucesso" id="mensagem-sucesso">
+                    <p>Mensagem enviada com sucesso! Em breve entraremos em contato.</p>
+                </div>
+
+            </div>
+
+        </section>
+        
+    </main>
+
+    <footer class="rodape">
+
+        <div>
+            <span class="nome-pe">Fabrício Capeletti - Synapse AI</span>
+            <span class="ano-pe">&copy;2026</span>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
